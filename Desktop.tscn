@@ -1,0 +1,533 @@
+[gd_scene format=3 uid="uid://d3w5tgvtjb351"]
+
+[ext_resource type="Texture2D" uid="uid://divugr8um48ut" path="res://images (1).jpg" id="1_erx6p"]
+[ext_resource type="Script" uid="uid://cajxib14518v1" path="res://desktop.gd" id="1_ktdgc"]
+[ext_resource type="Texture2D" uid="uid://bojtu3bxsg30o" path="res://5507625-legends-of-idleon-android-front-cover.png" id="3_1blhn"]
+[ext_resource type="Script" uid="uid://dcmp65toid7r3" path="res://texture_button.gd" id="4_l4poe"]
+[ext_resource type="Texture2D" uid="uid://brednmsnmh4pk" path="res://dead-cells-animated-series-770x470.webp" id="5_m0gmj"]
+[ext_resource type="Script" uid="uid://cm57efebur761" path="res://button.gd" id="5_rw380"]
+[ext_resource type="Script" uid="uid://c4h3a3n5kdatu" path="res://_.gd" id="6_avkg6"]
+[ext_resource type="FontFile" uid="uid://cnfg3finecuca" path="res://PixelifySans-VariableFont_wght.ttf" id="8_ktfw3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_slider_bg"]
+content_margin_top = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.35, 0.35, 0.38, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_slider_fill"]
+content_margin_top = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.92, 0.32, 0.22, 1)
+corner_radius_top_left = 3
+corner_radius_bottom_left = 3
+
+[node name="Node2D" type="Node2D" unique_id=1434995524]
+position = Vector2(-8, 8)
+script = ExtResource("1_ktdgc")
+
+[node name="Images(1)" type="Sprite2D" parent="." unique_id=283917684]
+position = Vector2(587, 303)
+scale = Vector2(4.915254, 2.6610167)
+texture = ExtResource("1_erx6p")
+
+[node name="Taskbar" type="ColorRect" parent="." unique_id=1613973438]
+offset_left = 6.0
+offset_top = 612.0
+offset_right = 1165.0
+offset_bottom = 659.0
+
+[node name="ButonTaskbar" type="TextureButton" parent="Taskbar" unique_id=142181826]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 111.0
+offset_right = 149.0
+offset_bottom = 28.0
+texture_normal = ExtResource("3_1blhn")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Button" type="Button" parent="." unique_id=524662686]
+offset_left = 3.0
+offset_top = 602.0
+offset_right = 92.0
+offset_bottom = 646.0
+theme_override_colors/font_color = Color(0.008954255, 0.00958977, 0.008481833, 1)
+theme_override_colors/font_focus_color = Color(0.012329121, 0.011038925, 0.01002501, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+text = "ShutDown"
+flat = true
+alignment = 0
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=1825988592]
+offset_left = 39.0
+offset_top = 33.0
+offset_right = 95.0
+offset_bottom = 86.0
+texture_normal = ExtResource("3_1blhn")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_l4poe")
+
+[node name="Label" type="Label" parent="." unique_id=12583952]
+offset_left = 20.0
+offset_top = 89.0
+offset_right = 119.0
+offset_bottom = 112.0
+text = "Glithced Ni..."
+
+[node name="Meniu" type="Control" parent="." unique_id=212329605]
+unique_name_in_owner = true
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="Meniu" unique_id=882686768]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 22.0
+offset_right = 1106.0
+offset_bottom = 606.0
+color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+
+[node name="TextureRect" type="TextureRect" parent="Meniu" unique_id=1438316606]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 33.0
+offset_right = 1106.0
+offset_bottom = 608.0
+texture = ExtResource("5_m0gmj")
+
+[node name="GrupPrincipal" type="Control" parent="Meniu" unique_id=1159824793]
+unique_name_in_owner = true
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ButonNewGame" type="Button" parent="Meniu/GrupPrincipal" unique_id=76628828]
+layout_mode = 0
+offset_left = 437.0
+offset_top = 351.0
+offset_right = 752.0
+offset_bottom = 390.0
+theme_override_fonts/font = ExtResource("8_ktfw3")
+theme_override_font_sizes/font_size = 22
+text = "START NEW GAME"
+
+[node name="ButonLoad" type="Button" parent="Meniu/GrupPrincipal" unique_id=1043692463]
+layout_mode = 0
+offset_left = 486.0
+offset_top = 395.0
+offset_right = 706.0
+offset_bottom = 435.0
+theme_override_fonts/font = ExtResource("8_ktfw3")
+theme_override_font_sizes/font_size = 22
+text = "LOAD SAVE"
+
+[node name="ButonOptions" type="Button" parent="Meniu/GrupPrincipal" unique_id=100682899]
+layout_mode = 0
+offset_left = 523.0
+offset_top = 441.0
+offset_right = 677.0
+offset_bottom = 481.0
+theme_override_fonts/font = ExtResource("8_ktfw3")
+theme_override_font_sizes/font_size = 22
+text = "OPTIONS"
+
+[node name="ButonExtras" type="Button" parent="Meniu/GrupPrincipal" unique_id=86560146]
+layout_mode = 0
+offset_left = 523.0
+offset_top = 485.0
+offset_right = 677.0
+offset_bottom = 521.0
+theme_override_fonts/font = ExtResource("8_ktfw3")
+theme_override_font_sizes/font_size = 22
+text = "EXTRAS"
+
+[node name="ButonQuit" type="Button" parent="Meniu/GrupPrincipal" unique_id=1323953448]
+layout_mode = 0
+offset_left = 523.0
+offset_top = 523.0
+offset_right = 677.0
+offset_bottom = 559.0
+theme_override_fonts/font = ExtResource("8_ktfw3")
+theme_override_font_sizes/font_size = 22
+text = "QUIT"
+
+[node name="GrupDificultate" type="Control" parent="Meniu" unique_id=1103658163]
+unique_name_in_owner = true
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Easy" type="Button" parent="Meniu/GrupDificultate" unique_id=470265316]
+layout_mode = 0
+offset_left = 211.0
+offset_top = 291.0
+offset_right = 423.0
+offset_bottom = 330.0
+theme_override_fonts/font = ExtResource("8_ktfw3")
+theme_override_font_sizes/font_size = 22
+text = "EASY"
+
+[node name="Medium" type="Button" parent="Meniu/GrupDificultate" unique_id=668805491]
+layout_mode = 0
+offset_left = 475.0
+offset_top = 292.0
+offset_right = 706.0
+offset_bottom = 331.0
+theme_override_fonts/font = ExtResource("8_ktfw3")
+theme_override_font_sizes/font_size = 22
+text = "MEDIUM"
+
+[node name="Hard" type="Button" parent="Meniu/GrupDificultate" unique_id=1805535416]
+layout_mode = 0
+offset_left = 733.0
+offset_top = 293.0
+offset_right = 950.0
+offset_bottom = 332.0
+theme_override_fonts/font = ExtResource("8_ktfw3")
+theme_override_font_sizes/font_size = 22
+text = "HARD"
+
+[node name="Back" type="Button" parent="Meniu/GrupDificultate" unique_id=1954511732]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 542.0
+offset_right = 242.0
+offset_bottom = 581.0
+theme_override_fonts/font = ExtResource("8_ktfw3")
+theme_override_font_sizes/font_size = 22
+text = "BACK"
+
+[node name="PopupFaraSalvare" type="ColorRect" parent="Meniu" unique_id=305812101]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 370.0
+offset_top = 220.0
+offset_right = 810.0
+offset_bottom = 400.0
+color = Color(0.015, 0.015, 0.025, 0.95)
+
+[node name="Label" type="Label" parent="Meniu/PopupFaraSalvare" unique_id=1715682053]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 25.0
+offset_right = 420.0
+offset_bottom = 75.0
+theme_override_fonts/font = ExtResource("8_ktfw3")
+theme_override_font_sizes/font_size = 23
+text = "NO SAVED GAME EXISTS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Back1" type="Button" parent="Meniu/PopupFaraSalvare" unique_id=1906063448]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 95.0
+offset_right = 280.0
+offset_bottom = 140.0
+theme_override_fonts/font = ExtResource("8_ktfw3")
+theme_override_font_sizes/font_size = 22
+text = "BACK"
+
+[node name="GrupOptiuni" type="Control" parent="Meniu" unique_id=2068270875]
+unique_name_in_owner = true
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Meniu/GrupOptiuni" unique_id=1190495614]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 90.0
+offset_right = 705.0
+offset_bottom = 135.0
+theme_override_fonts/font = ExtResource("8_ktfw3")
+theme_override_font_sizes/font_size = 31
+text = "OPTIONS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PanelOptiuni" type="ColorRect" parent="Meniu/GrupOptiuni" unique_id=1535666286]
+layout_mode = 0
+offset_left = 360.0
+offset_top = 180.0
+offset_right = 825.0
+offset_bottom = 440.0
+color = Color(0.015, 0.015, 0.025, 0.92)
+
+[node name="LabelVolume" type="Label" parent="Meniu/GrupOptiuni" unique_id=446028348]
+layout_mode = 0
+offset_left = 380.0
+offset_top = 210.0
+offset_right = 805.0
+offset_bottom = 250.0
+theme_override_fonts/font = ExtResource("8_ktfw3")
+theme_override_font_sizes/font_size = 24
+text = "MASTER VOLUME"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LabelMin" type="Label" parent="Meniu/GrupOptiuni" unique_id=1273558403]
+layout_mode = 0
+offset_left = 375.0
+offset_top = 275.0
+offset_right = 425.0
+offset_bottom = 310.0
+theme_override_fonts/font = ExtResource("8_ktfw3")
+theme_override_font_sizes/font_size = 18
+text = "0%"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VolumeSlider" type="HSlider" parent="Meniu/GrupOptiuni" unique_id=1235487226]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 430.0
+offset_top = 280.0
+offset_right = 745.0
+offset_bottom = 310.0
+theme_override_styles/slider = SubResource("StyleBoxFlat_slider_bg")
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_slider_fill")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_slider_fill")
+value = 80.0
+
+[node name="VolumePercentLabel" type="Label" parent="Meniu/GrupOptiuni" unique_id=615333633]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 750.0
+offset_top = 275.0
+offset_right = 815.0
+offset_bottom = 310.0
+theme_override_fonts/font = ExtResource("8_ktfw3")
+theme_override_font_sizes/font_size = 18
+text = "80%"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackOptions" type="Button" parent="Meniu/GrupOptiuni" unique_id=77646659]
+layout_mode = 0
+offset_left = 525.0
+offset_top = 360.0
+offset_right = 660.0
+offset_bottom = 405.0
+theme_override_fonts/font = ExtResource("8_ktfw3")
+theme_override_font_sizes/font_size = 22
+text = "BACK"
+
+[node name="GrupExtras" type="Control" parent="Meniu" unique_id=1066625087]
+unique_name_in_owner = true
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="LabelTitle" type="Label" parent="Meniu/GrupExtras" unique_id=1441553788]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 90.0
+offset_right = 705.0
+offset_bottom = 135.0
+theme_override_fonts/font = ExtResource("8_ktfw3")
+theme_override_font_sizes/font_size = 31
+text = "EXTRAS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PanelExtras" type="ColorRect" parent="Meniu/GrupExtras" unique_id=300801961]
+layout_mode = 0
+offset_left = 296.0
+offset_top = 180.0
+offset_right = 856.0
+offset_bottom = 440.0
+color = Color(0.015, 0.015, 0.025, 0.92)
+
+[node name="LabelCredits" type="Label" parent="Meniu/GrupExtras" unique_id=415931341]
+layout_mode = 0
+offset_left = 310.0
+offset_top = 220.0
+offset_right = 842.0
+offset_bottom = 330.0
+theme_override_fonts/font = ExtResource("8_ktfw3")
+theme_override_font_sizes/font_size = 21
+text = "The game was created by:
+Moldovan Robert & Berehoi Croitoru David"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="BackExtras" type="Button" parent="Meniu/GrupExtras" unique_id=773578029]
+layout_mode = 0
+offset_left = 506.0
+offset_top = 360.0
+offset_right = 646.0
+offset_bottom = 405.0
+theme_override_fonts/font = ExtResource("8_ktfw3")
+theme_override_font_sizes/font_size = 22
+text = "BACK"
+
+[node name="PopupQuit" type="ColorRect" parent="Meniu" unique_id=1378752328]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 370.0
+offset_top = 220.0
+offset_right = 810.0
+offset_bottom = 400.0
+color = Color(0.015, 0.015, 0.025, 0.95)
+
+[node name="LabelQuestion" type="Label" parent="Meniu/PopupQuit" unique_id=552583838]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 25.0
+offset_right = 420.0
+offset_bottom = 75.0
+theme_override_fonts/font = ExtResource("8_ktfw3")
+theme_override_font_sizes/font_size = 24
+text = "DO YOU WANT TO QUIT?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButonQuitYes" type="Button" parent="Meniu/PopupQuit" unique_id=403211239]
+layout_mode = 0
+offset_left = 75.0
+offset_top = 100.0
+offset_right = 185.0
+offset_bottom = 145.0
+theme_override_fonts/font = ExtResource("8_ktfw3")
+theme_override_font_sizes/font_size = 22
+text = "YES"
+
+[node name="ButonQuitNo" type="Button" parent="Meniu/PopupQuit" unique_id=1174269441]
+layout_mode = 0
+offset_left = 255.0
+offset_top = 100.0
+offset_right = 365.0
+offset_bottom = 145.0
+theme_override_fonts/font = ExtResource("8_ktfw3")
+theme_override_font_sizes/font_size = 22
+text = "NO"
+
+[node name="PopupOverwriteSave" type="ColorRect" parent="Meniu" unique_id=1275017281]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 330.0
+offset_top = 210.0
+offset_right = 850.0
+offset_bottom = 410.0
+color = Color(0.015, 0.015, 0.025, 0.96)
+
+[node name="LabelQuestion" type="Label" parent="Meniu/PopupOverwriteSave" unique_id=1262922731]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 25.0
+offset_right = 505.0
+offset_bottom = 85.0
+theme_override_fonts/font = ExtResource("8_ktfw3")
+theme_override_font_sizes/font_size = 21
+text = "A SAVED GAME ALREADY EXISTS.
+DO YOU WANT TO OVERWRITE AND START A NEW GAME?"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="ButonOverwriteYes" type="Button" parent="Meniu/PopupOverwriteSave" unique_id=170124391]
+layout_mode = 0
+offset_left = 115.0
+offset_top = 115.0
+offset_right = 225.0
+offset_bottom = 160.0
+theme_override_fonts/font = ExtResource("8_ktfw3")
+theme_override_font_sizes/font_size = 22
+text = "YES"
+
+[node name="ButonOverwriteNo" type="Button" parent="Meniu/PopupOverwriteSave" unique_id=565019581]
+layout_mode = 0
+offset_left = 295.0
+offset_top = 115.0
+offset_right = 405.0
+offset_bottom = 160.0
+theme_override_fonts/font = ExtResource("8_ktfw3")
+theme_override_font_sizes/font_size = 22
+text = "NO"
+
+[node name="BaraSus" type="ColorRect" parent="Meniu" unique_id=863515827]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 5.0
+offset_right = 1106.0
+offset_bottom = 33.0
+
+[node name="X" type="Button" parent="Meniu/BaraSus" unique_id=1282152988]
+layout_mode = 0
+offset_left = 1027.0
+offset_top = 1.0
+offset_right = 1062.0
+offset_bottom = 32.0
+theme_override_colors/font_color = Color(0.009500013, 0.0093103545, 0.008937711, 1)
+theme_override_colors/font_pressed_color = Color(1, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(12.797093, 0, 0, 1)
+text = "X"
+flat = true
+script = ExtResource("5_rw380")
+
+[node name="-" type="Button" parent="Meniu/BaraSus" unique_id=528352282]
+layout_mode = 0
+offset_left = 992.0
+offset_right = 1025.0
+offset_bottom = 31.0
+theme_override_colors/font_color = Color(0.0093103545, 0.0093103545, 0.0093103545, 1)
+theme_override_colors/font_focus_color = Color(0.011203093, 0.011203093, 0.011203093, 1)
+theme_override_colors/font_pressed_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+theme_override_colors/font_hover_color = Color(0.011203093, 0.011203093, 0.011203093, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+button_mask = 0
+text = "-"
+flat = true
+script = ExtResource("6_avkg6")
+
+[node name="Label" type="Label" parent="Meniu/BaraSus" unique_id=56977072]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 5.0
+offset_right = 147.0
+offset_bottom = 26.0
+theme_override_colors/font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+theme_override_fonts/font = ExtResource("8_ktfw3")
+theme_override_font_sizes/font_size = 15
+text = "Glitched Nightmare"
+
+[connection signal="pressed" from="Taskbar/ButonTaskbar" to="." method="_on_buton_taskbar_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]
+[connection signal="pressed" from="Meniu/GrupPrincipal/ButonNewGame" to="." method="_on_buton_new_game_pressed"]
+[connection signal="pressed" from="Meniu/GrupPrincipal/ButonLoad" to="." method="_on_buton_load_pressed"]
+[connection signal="pressed" from="Meniu/GrupPrincipal/ButonOptions" to="." method="_on_buton_options_pressed"]
+[connection signal="pressed" from="Meniu/GrupPrincipal/ButonExtras" to="." method="_on_buton_extras_pressed"]
+[connection signal="pressed" from="Meniu/GrupPrincipal/ButonQuit" to="." method="_on_buton_quit_pressed"]
+[connection signal="pressed" from="Meniu/GrupDificultate/Easy" to="." method="_on_easy_pressed"]
+[connection signal="pressed" from="Meniu/GrupDificultate/Medium" to="." method="_on_medium_pressed"]
+[connection signal="pressed" from="Meniu/GrupDificultate/Hard" to="." method="_on_hard_pressed"]
+[connection signal="pressed" from="Meniu/GrupDificultate/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="Meniu/PopupFaraSalvare/Back1" to="." method="_on_back_1_pressed"]
+[connection signal="value_changed" from="Meniu/GrupOptiuni/VolumeSlider" to="." method="_on_volume_slider_value_changed"]
+[connection signal="pressed" from="Meniu/GrupOptiuni/BackOptions" to="." method="_on_back_options_pressed"]
+[connection signal="pressed" from="Meniu/GrupExtras/BackExtras" to="." method="_on_back_extras_pressed"]
+[connection signal="pressed" from="Meniu/PopupQuit/ButonQuitYes" to="." method="_on_buton_quit_yes_pressed"]
+[connection signal="pressed" from="Meniu/PopupQuit/ButonQuitNo" to="." method="_on_buton_quit_no_pressed"]
+[connection signal="pressed" from="Meniu/PopupOverwriteSave/ButonOverwriteYes" to="." method="_on_buton_overwrite_yes_pressed"]
+[connection signal="pressed" from="Meniu/PopupOverwriteSave/ButonOverwriteNo" to="." method="_on_buton_overwrite_no_pressed"]
+[connection signal="pressed" from="Meniu/BaraSus/X" to="." method="_on_x_pressed"]
+[connection signal="pressed" from="Meniu/BaraSus/-" to="Meniu/BaraSus/-" method="_on_pressed"]

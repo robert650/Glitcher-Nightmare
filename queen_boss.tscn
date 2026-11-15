@@ -1,0 +1,153 @@
+[gd_scene format=3 uid="uid://cy8kqueenboss1"]
+
+[ext_resource type="Script" uid="uid://cqueenbossgd1" path="res://queen_boss.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://bi6iyijp51ais" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/demon/Attack1.png" id="2_att1"]
+[ext_resource type="Texture2D" uid="uid://doy1vcys7nvgu" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/demon/Attack2.png" id="3_att2"]
+[ext_resource type="Texture2D" uid="uid://ggq8ljoal24b" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/demon/Attack3.png" id="4_att3"]
+[ext_resource type="Texture2D" uid="uid://ds0mwric4cutr" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/demon/Attack4.png" id="5_att4"]
+[ext_resource type="Texture2D" uid="uid://dv5snvop1a1i" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/demon/Death1.png" id="6_dth1"]
+[ext_resource type="Texture2D" uid="uid://de0cjccppsfnk" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/demon/Death2.png" id="7_dth2"]
+[ext_resource type="Texture2D" uid="uid://8ilci4c76ic7" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/demon/Death3.png" id="8_dth3"]
+[ext_resource type="Texture2D" uid="uid://cklimyeyodwfv" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/demon/Death4.png" id="9_dth4"]
+[ext_resource type="Texture2D" uid="uid://cb8prg8amkvde" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/demon/Death5.png" id="10_dth5"]
+[ext_resource type="Texture2D" uid="uid://dfkfj4whwptqc" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/demon/Death6.png" id="11_dth6"]
+[ext_resource type="Texture2D" uid="uid://ca6qkf4ott4gd" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/demon/Hurt1.png" id="12_hrt1"]
+[ext_resource type="Texture2D" uid="uid://c16bfrlmgj8ek" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/demon/Hurt2.png" id="13_hrt2"]
+[ext_resource type="Texture2D" uid="uid://ohxb3dbmds4p" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/demon/Idle1.png" id="14_idl1"]
+[ext_resource type="Texture2D" uid="uid://byqjaoqo7s3jb" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/demon/Idle2.png" id="15_idl2"]
+[ext_resource type="Texture2D" uid="uid://bb7eykhm48xoq" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/demon/Idle3.png" id="16_idl3"]
+[ext_resource type="Texture2D" uid="uid://4tfly0kkp818" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/demon/Walk1.png" id="17_wlk1"]
+[ext_resource type="Texture2D" uid="uid://c40s5k68voq0c" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/demon/Walk2.png" id="18_wlk2"]
+[ext_resource type="Texture2D" uid="uid://txmwt0hsxign" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/demon/Walk3.png" id="19_wlk3"]
+[ext_resource type="Texture2D" uid="uid://c6sv6w7gixjbf" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/demon/Walk4.png" id="20_wlk4"]
+[ext_resource type="Texture2D" uid="uid://d4c8jnv0g3774" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/demon/Walk5.png" id="21_wlk5"]
+[ext_resource type="Texture2D" uid="uid://biilhvojgl178" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/demon/Walk6.png" id="22_wlk6"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_demon_boss"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_att1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_att2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_att3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_att4")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_dth1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_dth2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_dth3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_dth4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_dth5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_dth6")
+}],
+"loop": false,
+"name": &"death",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_hrt1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_hrt2")
+}],
+"loop": false,
+"name": &"hurt",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_idl1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_idl2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_idl3")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_att1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_att2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_att3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_att4")
+}],
+"loop": false,
+"name": &"special",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_wlk1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_wlk2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_wlk3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_wlk4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_wlk5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_wlk6")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 8.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_demon"]
+radius = 28.0
+height = 84.0
+
+[node name="QueenBoss" type="CharacterBody2D" groups=["Boss", "Inamici"]]
+collision_layer = 4
+collision_mask = 3
+script = ExtResource("1_script")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -10)
+scale = Vector2(0.85, 0.85)
+sprite_frames = SubResource("SpriteFrames_demon_boss")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0)
+shape = SubResource("CapsuleShape2D_demon")
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

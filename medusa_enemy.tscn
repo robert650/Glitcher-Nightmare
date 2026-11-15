@@ -1,0 +1,204 @@
+[gd_scene format=3 uid="uid://dlkehbmmgnc2c"]
+
+[ext_resource type="Texture2D" uid="uid://dvsv5ylrmhfon" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/medusa/Attack1.png" id="1_atk1"]
+[ext_resource type="Texture2D" uid="uid://bhlt8lymphyme" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/medusa/Attack2.png" id="2_atk2"]
+[ext_resource type="Texture2D" uid="uid://nne3wfwkyuar" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/medusa/Attack3.png" id="3_atk3"]
+[ext_resource type="Texture2D" uid="uid://gc58svax1lp0" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/medusa/Attack4.png" id="4_atk4"]
+[ext_resource type="Texture2D" uid="uid://clvp5vo7g783r" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/medusa/Attack5.png" id="5_atk5"]
+[ext_resource type="Texture2D" uid="uid://bolij1dpqenqo" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/medusa/Attack6.png" id="6_atk6"]
+[ext_resource type="Texture2D" uid="uid://b2vrcwqk0s3rv" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/medusa/Death1.png" id="7_d1"]
+[ext_resource type="Texture2D" uid="uid://72a4uheeg6yy" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/medusa/Death2.png" id="8_d2"]
+[ext_resource type="Texture2D" uid="uid://cbe3hnx4omtle" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/medusa/Death3.png" id="9_d3"]
+[ext_resource type="Texture2D" uid="uid://cxvlu7vybohxg" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/medusa/Death4.png" id="10_d4"]
+[ext_resource type="Texture2D" uid="uid://bdhublaimwakr" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/medusa/Death5.png" id="11_d5"]
+[ext_resource type="Texture2D" uid="uid://cxxjsov3j8qky" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/medusa/Death6.png" id="12_d6"]
+[ext_resource type="Texture2D" uid="uid://ce7xg4dkjv116" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/medusa/Hurt1.png" id="13_h1"]
+[ext_resource type="Texture2D" uid="uid://cvxhqerw41e50" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/medusa/Hurt2.png" id="14_h2"]
+[ext_resource type="Texture2D" uid="uid://uxfx0w44ophq" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/medusa/Idle1.png" id="15_i1"]
+[ext_resource type="Texture2D" uid="uid://bdinj36170c71" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/medusa/Idle2.png" id="16_i2"]
+[ext_resource type="Texture2D" uid="uid://dyxy0mo2timfc" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/medusa/Idle3.png" id="17_i3"]
+[ext_resource type="Texture2D" uid="uid://ce5ahv33mrh0l" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/medusa/Stone1.png" id="18_s1"]
+[ext_resource type="Texture2D" uid="uid://du8q6bjjd8k0j" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/medusa/Stone2.png" id="19_s2"]
+[ext_resource type="Texture2D" uid="uid://chbqlhtku5qns" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/medusa/Stone3.png" id="20_s3"]
+[ext_resource type="Texture2D" uid="uid://c7mmys3q2peku" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/medusa/Stone4.png" id="21_s4"]
+[ext_resource type="Texture2D" uid="uid://d161rok7qql8e" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/medusa/Stone5.png" id="22_s5"]
+[ext_resource type="Texture2D" uid="uid://y2dmpin6htwa" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/medusa/Stone6.png" id="23_s6"]
+[ext_resource type="Texture2D" uid="uid://cql36komgkbu2" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/medusa/Stone7.png" id="24_s7"]
+[ext_resource type="Texture2D" uid="uid://dsq7u5d2f8m3w" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/medusa/Stone8.png" id="25_s8"]
+[ext_resource type="Texture2D" uid="uid://d2r4buxgsp6lj" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/medusa/Walk1.png" id="26_w1"]
+[ext_resource type="Texture2D" uid="uid://dwlvdhruqj8uw" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/medusa/Walk2.png" id="27_w2"]
+[ext_resource type="Texture2D" uid="uid://bmbaxwwegfkqq" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/medusa/Walk3.png" id="28_w3"]
+[ext_resource type="Texture2D" uid="uid://dlxitimyl0b7s" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/medusa/Walk4.png" id="29_w4"]
+[ext_resource type="Script" path="res://medusa_enemy.gd" id="30_script"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_medusa"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_atk1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_atk2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_atk3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_atk4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_atk5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_atk6")
+}],
+"loop": 0,
+"name": &"attack",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_d1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_d2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_d3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_d4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_d5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_d6")
+}],
+"loop": 0,
+"name": &"death",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_h1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_h2")
+}],
+"loop": 0,
+"name": &"hurt",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_i1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_i2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_i3")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_s1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_s2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_s3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_s4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_s5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_s6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_s7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_s8")
+}],
+"loop": 0,
+"name": &"stone",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_w1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_w2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_w3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_w4")
+}],
+"loop": 1,
+"name": &"walk",
+"speed": 6.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_medusa"]
+size = Vector2(50, 64)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_medusa_bg"]
+bg_color = Color(0.1, 0.1, 0.12, 0.85)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 0.9)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_medusa_fill"]
+bg_color = Color(0.85, 0.2, 0.5, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 0.4, 0.7, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[node name="MedusaEnemy" type="CharacterBody2D"]
+script = ExtResource("30_script")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_medusa")
+animation = &"idle"
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-10, 4)
+shape = SubResource("RectangleShape2D_medusa")
+
+[node name="BaraViata" type="ProgressBar" parent="."]
+offset_left = -30.0
+offset_top = -45.0
+offset_right = 30.0
+offset_bottom = -37.0
+theme_override_styles/background = SubResource("StyleBoxFlat_medusa_bg")
+theme_override_styles/fill = SubResource("StyleBoxFlat_medusa_fill")
+max_value = 70.0
+value = 70.0
+show_percentage = false
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

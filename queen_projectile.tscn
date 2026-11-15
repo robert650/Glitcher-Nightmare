@@ -1,0 +1,94 @@
+[gd_scene format=3 uid="uid://hruo1cl5wodo"]
+
+[ext_resource type="Script" path="res://queen_projectile.gd" id="1_proj"]
+[ext_resource type="Texture2D" uid="uid://bc4emrjcplwpp" path="res://Animations/Magic Arrow.png" id="2_arrow"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p1"]
+atlas = ExtResource("2_arrow")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p2"]
+atlas = ExtResource("2_arrow")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p3"]
+atlas = ExtResource("2_arrow")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p4"]
+atlas = ExtResource("2_arrow")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p5"]
+atlas = ExtResource("2_arrow")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p6"]
+atlas = ExtResource("2_arrow")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p7"]
+atlas = ExtResource("2_arrow")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p8"]
+atlas = ExtResource("2_arrow")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p9"]
+atlas = ExtResource("2_arrow")
+region = Rect2(1024, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_proj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p9")
+}],
+"loop": true,
+"name": &"default",
+"speed": 14.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_proj"]
+radius = 14.0
+
+[node name="QueenProjectile" type="Area2D"]
+collision_layer = 4
+collision_mask = 3
+script = ExtResource("1_proj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+modulate = Color(0.85, 0.35, 1, 1)
+scale = Vector2(0.55, 0.55)
+sprite_frames = SubResource("SpriteFrames_proj")
+frame_progress = 0.5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_proj")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

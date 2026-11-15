@@ -1,0 +1,215 @@
+[gd_scene format=3 uid="uid://cjkh6wauwdjvv"]
+
+[ext_resource type="Texture2D" uid="uid://16l6dra66b2h" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/jinn_animation/Attack1.png" id="1_vvdba"]
+[ext_resource type="Script" uid="uid://b5pjhv0ttm1n6" path="res://genie_enemy.gd" id="1_wse1c"]
+[ext_resource type="Texture2D" uid="uid://das0shpnnt51b" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/jinn_animation/Attack2.png" id="2_wse1c"]
+[ext_resource type="Texture2D" uid="uid://bs5nlsdirraqm" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/jinn_animation/Attack3.png" id="3_65ivh"]
+[ext_resource type="Texture2D" uid="uid://lbettaca5kxe" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/jinn_animation/Attack4.png" id="4_3mlc6"]
+[ext_resource type="Texture2D" uid="uid://738x6rjknb5b" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/jinn_animation/Death1.png" id="5_clsmf"]
+[ext_resource type="Texture2D" uid="uid://jhykt8eihgyd" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/jinn_animation/Death2.png" id="6_8ovcd"]
+[ext_resource type="Texture2D" uid="uid://fj6ids5448ii" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/jinn_animation/Death3.png" id="7_6lda7"]
+[ext_resource type="Texture2D" uid="uid://1xxcab4b106y" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/jinn_animation/Death4.png" id="8_ant0a"]
+[ext_resource type="Texture2D" uid="uid://cefblkqjex38m" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/jinn_animation/Death5.png" id="9_teyxy"]
+[ext_resource type="Texture2D" uid="uid://fy31tn1jek8a" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/jinn_animation/Death6.png" id="10_b55ls"]
+[ext_resource type="Texture2D" uid="uid://bkhlp3win8uqd" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/jinn_animation/Flight1.png" id="11_tbkfe"]
+[ext_resource type="Texture2D" uid="uid://bnxtsxt62b82a" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/jinn_animation/Flight2.png" id="12_nh3rw"]
+[ext_resource type="Texture2D" uid="uid://cflhyxud7k4lj" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/jinn_animation/Flight3.png" id="13_d3ik7"]
+[ext_resource type="Texture2D" uid="uid://bphe4sj65qxii" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/jinn_animation/Flight4.png" id="14_s5l5b"]
+[ext_resource type="Texture2D" uid="uid://by03y35j2aofu" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/jinn_animation/Hurt1.png" id="15_4pmdr"]
+[ext_resource type="Texture2D" uid="uid://bgpqwq36r12vf" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/jinn_animation/Hurt2.png" id="16_mexd7"]
+[ext_resource type="Texture2D" uid="uid://bkiap37o8bt72" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/jinn_animation/Idle1.png" id="17_57kwh"]
+[ext_resource type="Texture2D" uid="uid://jet24cy4dh4c" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/jinn_animation/Idle2.png" id="18_in0fx"]
+[ext_resource type="Texture2D" uid="uid://s267f0d1hltp" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/jinn_animation/Idle3.png" id="19_pb7jh"]
+[ext_resource type="Texture2D" uid="uid://67nn03p2ubdj" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/jinn_animation/Magic_Attack1.png" id="20_bmlg5"]
+[ext_resource type="Texture2D" uid="uid://bdvw88c61pv5k" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/jinn_animation/Magic_Attack2.png" id="21_tpj7l"]
+[ext_resource type="Texture2D" uid="uid://cn88mmipxp5k2" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/jinn_animation/Magic_Attack3.png" id="22_bpbbc"]
+[ext_resource type="Texture2D" uid="uid://b6sh8rv65anhl" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/jinn_animation/Magic_Attack4.png" id="23_1221r"]
+[ext_resource type="Texture2D" uid="uid://dx6q5dbe5uk0a" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/jinn_animation/Magic_Attack5.png" id="24_qei8x"]
+[ext_resource type="Texture2D" uid="uid://cakjiopcd6ftv" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/jinn_animation/Magic_Attack7.png" id="25_e61p2"]
+[ext_resource type="Texture2D" uid="uid://cdm4hed1ap8ao" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/jinn_animation/Magic_Attack6.png" id="26_sy1k8"]
+[ext_resource type="Texture2D" uid="uid://bhwfdix7pnqdn" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/jinn_animation/Magic_Attack8.png" id="27_cs73t"]
+[ext_resource type="Texture2D" uid="uid://dqyyc5dv17mi0" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/jinn_animation/Magic_Attack23.png" id="28_35mxy"]
+[ext_resource type="Texture2D" uid="uid://ca8ykfrey8yia" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/jinn_animation/Magic_Attack22.png" id="29_cmyme"]
+[ext_resource type="Texture2D" uid="uid://da44mlvj6etvi" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/jinn_animation/Magic_Attack11.png" id="30_66vdf"]
+[ext_resource type="Texture2D" uid="uid://dn63ikuxqdcxr" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/jinn_animation/Magic_Attack10.png" id="31_uj64l"]
+[ext_resource type="Texture2D" uid="uid://ckc8xqj5366jo" path="res://craftpix-561178-free-rpg-monster-sprites-pixel-art/PNG/jinn_animation/Magic_Attack9.png" id="32_q50gt"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xi506"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_vvdba")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wse1c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_65ivh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3mlc6")
+}],
+"loop": 0,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_clsmf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_8ovcd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_6lda7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ant0a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_teyxy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_b55ls")
+}],
+"loop": 0,
+"name": &"death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_tbkfe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_nh3rw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_d3ik7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_s5l5b")
+}],
+"loop": 1,
+"name": &"flight",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_4pmdr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_mexd7")
+}],
+"loop": 0,
+"name": &"hurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_57kwh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_in0fx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_pb7jh")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_bmlg5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_tpj7l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_bpbbc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_1221r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_qei8x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_e61p2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_sy1k8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_cs73t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_35mxy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_cmyme")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_66vdf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_uj64l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_q50gt")
+}],
+"loop": 0,
+"name": &"magic attack",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xi506"]
+size = Vector2(55, 84)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_enemy_bg"]
+bg_color = Color(0.1, 0.1, 0.12, 0.85)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 0.9)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_enemy_fill"]
+bg_color = Color(0.88, 0.22, 0.22, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_bottom = 1
+border_color = Color(1, 0.4, 0.4, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=609368424]
+script = ExtResource("1_wse1c")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=969894855]
+sprite_frames = SubResource("SpriteFrames_xi506")
+animation = &"magic attack"
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=864719109]
+position = Vector2(17, 5)
+shape = SubResource("RectangleShape2D_xi506")
+
+[node name="BaraViata" type="ProgressBar" parent="." unique_id=74829103]
+offset_left = -15.0
+offset_top = -55.0
+offset_right = 45.0
+offset_bottom = -47.0
+theme_override_styles/background = SubResource("StyleBoxFlat_enemy_bg")
+theme_override_styles/fill = SubResource("StyleBoxFlat_enemy_fill")
+max_value = 50.0
+value = 50.0
+show_percentage = false
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

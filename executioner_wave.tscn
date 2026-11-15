@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://dexecwave01"]
+
+[ext_resource type="Script" path="res://executioner_wave.gd" id="1_wave"]
+[ext_resource type="Texture2D" uid="uid://dlg72hbmudmdl" path="res://Animations/Wave of souls.png" id="2_soulwave"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w1"]
+atlas = ExtResource("2_soulwave")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w2"]
+atlas = ExtResource("2_soulwave")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w3"]
+atlas = ExtResource("2_soulwave")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w4"]
+atlas = ExtResource("2_soulwave")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w5"]
+atlas = ExtResource("2_soulwave")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w6"]
+atlas = ExtResource("2_soulwave")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w7"]
+atlas = ExtResource("2_soulwave")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wave"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 14.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wave"]
+size = Vector2(50, 48)
+
+[node name="ExecutionerWave" type="Area2D"]
+collision_layer = 4
+collision_mask = 3
+script = ExtResource("1_wave")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+modulate = Color(0.9, 0.15, 0.35, 1)
+scale = Vector2(0.75, 0.75)
+sprite_frames = SubResource("SpriteFrames_wave")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 12)
+shape = SubResource("RectangleShape2D_wave")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

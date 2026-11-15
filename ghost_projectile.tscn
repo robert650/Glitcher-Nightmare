@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://c6f5vab2qpx4m"]
+
+[ext_resource type="Script" path="res://ghost_projectile.gd" id="1_ghost"]
+[ext_resource type="Texture2D" uid="uid://ci472p37ia80v" path="res://Animations/Soul - walk.png" id="2_soul"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g1"]
+atlas = ExtResource("2_soul")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g2"]
+atlas = ExtResource("2_soul")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g3"]
+atlas = ExtResource("2_soul")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g4"]
+atlas = ExtResource("2_soul")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g5"]
+atlas = ExtResource("2_soul")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ghost"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 14.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ghost"]
+radius = 24.0
+
+[node name="GhostProjectile" type="Area2D"]
+collision_layer = 2
+collision_mask = 7
+script = ExtResource("1_ghost")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+modulate = Color(0.7, 1.25, 2.0, 0.95)
+position = Vector2(0, -5)
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_ghost")
+animation = &"default"
+frame_progress = 0.5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -5)
+shape = SubResource("CircleShape2D_ghost")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

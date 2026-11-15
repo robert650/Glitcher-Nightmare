@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://bopkkcun2asxg"]
+
+[ext_resource type="Script" path="res://falling_spike.gd" id="1_spike"]
+[ext_resource type="Texture2D" path="res://undead_executioner/rock_spike.png" id="2_tex"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_spike"]
+radius = 12.0
+height = 54.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_danger"]
+bg_color = Color(0.9, 0.15, 0.25, 0.45)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 0.3, 0.4, 0.9)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[node name="FallingSpike" type="Area2D"]
+collision_layer = 4
+collision_mask = 3
+script = ExtResource("1_spike")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_tex")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+shape = SubResource("CapsuleShape2D_spike")
+
+[node name="IndicatorSol" type="Panel" parent="."]
+visible = false
+offset_left = -20.0
+offset_top = -6.0
+offset_right = 20.0
+offset_bottom = 4.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_danger")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

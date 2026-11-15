@@ -1,0 +1,174 @@
+[gd_scene format=3 uid="uid://dexecutioner01"]
+
+[ext_resource type="Script" path="res://undead_executioner.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://undead_executioner/idle_0.png" id="2_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/idle_1.png" id="3_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/idle_2.png" id="4_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/idle_3.png" id="5_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/attack_0.png" id="6_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/attack_1.png" id="7_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/attack_2.png" id="8_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/attack_3.png" id="9_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/attack_4.png" id="10_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/attack_5.png" id="11_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/attack_6.png" id="12_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/attack_7.png" id="13_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/attack_8.png" id="14_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/attack_9.png" id="15_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/attack_10.png" id="16_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/attack_11.png" id="17_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/attack_12.png" id="18_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/skill_0.png" id="19_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/skill_1.png" id="20_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/skill_2.png" id="21_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/skill_3.png" id="22_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/skill_4.png" id="23_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/skill_5.png" id="24_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/skill_6.png" id="25_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/skill_7.png" id="26_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/skill_8.png" id="27_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/skill_9.png" id="28_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/skill_10.png" id="29_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/skill_11.png" id="30_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/summon_0.png" id="31_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/summon_1.png" id="32_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/summon_2.png" id="33_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/summon_3.png" id="34_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/summon_4.png" id="35_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/death_0.png" id="36_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/death_1.png" id="37_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/death_2.png" id="38_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/death_3.png" id="39_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/death_4.png" id="40_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/death_5.png" id="41_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/death_6.png" id="42_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/death_7.png" id="43_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/death_8.png" id="44_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/death_9.png" id="45_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/death_10.png" id="46_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/death_11.png" id="47_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/death_12.png" id="48_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/death_13.png" id="49_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/death_14.png" id="50_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/death_15.png" id="51_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/death_16.png" id="52_tex"]
+[ext_resource type="Texture2D" path="res://undead_executioner/death_17.png" id="53_tex"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_executioner"]
+animations = [{
+"frames": [
+{ "duration": 1.0, "texture": ExtResource("6_tex") },
+{ "duration": 1.0, "texture": ExtResource("7_tex") },
+{ "duration": 1.0, "texture": ExtResource("8_tex") },
+{ "duration": 1.0, "texture": ExtResource("9_tex") },
+{ "duration": 1.0, "texture": ExtResource("10_tex") },
+{ "duration": 1.0, "texture": ExtResource("11_tex") },
+{ "duration": 1.0, "texture": ExtResource("12_tex") },
+{ "duration": 1.0, "texture": ExtResource("13_tex") },
+{ "duration": 1.0, "texture": ExtResource("14_tex") },
+{ "duration": 1.0, "texture": ExtResource("15_tex") },
+{ "duration": 1.0, "texture": ExtResource("16_tex") },
+{ "duration": 1.0, "texture": ExtResource("17_tex") },
+{ "duration": 1.0, "texture": ExtResource("18_tex") }
+],
+"loop": false,
+"name": &"attack",
+"speed": 10.0
+}, {
+"frames": [
+{ "duration": 1.0, "texture": ExtResource("36_tex") },
+{ "duration": 1.0, "texture": ExtResource("37_tex") },
+{ "duration": 1.0, "texture": ExtResource("38_tex") },
+{ "duration": 1.0, "texture": ExtResource("39_tex") },
+{ "duration": 1.0, "texture": ExtResource("40_tex") },
+{ "duration": 1.0, "texture": ExtResource("41_tex") },
+{ "duration": 1.0, "texture": ExtResource("42_tex") },
+{ "duration": 1.0, "texture": ExtResource("43_tex") },
+{ "duration": 1.0, "texture": ExtResource("44_tex") },
+{ "duration": 1.0, "texture": ExtResource("45_tex") },
+{ "duration": 1.0, "texture": ExtResource("46_tex") },
+{ "duration": 1.0, "texture": ExtResource("47_tex") },
+{ "duration": 1.0, "texture": ExtResource("48_tex") },
+{ "duration": 1.0, "texture": ExtResource("49_tex") },
+{ "duration": 1.0, "texture": ExtResource("50_tex") },
+{ "duration": 1.0, "texture": ExtResource("51_tex") },
+{ "duration": 1.0, "texture": ExtResource("52_tex") },
+{ "duration": 1.0, "texture": ExtResource("53_tex") }
+],
+"loop": false,
+"name": &"death",
+"speed": 9.0
+}, {
+"frames": [
+{ "duration": 1.0, "texture": ExtResource("2_tex") },
+{ "duration": 1.0, "texture": ExtResource("3_tex") },
+{ "duration": 1.0, "texture": ExtResource("4_tex") },
+{ "duration": 1.0, "texture": ExtResource("5_tex") }
+],
+"loop": true,
+"name": &"idle",
+"speed": 6.0
+}, {
+"frames": [
+{ "duration": 1.0, "texture": ExtResource("19_tex") },
+{ "duration": 1.0, "texture": ExtResource("20_tex") },
+{ "duration": 1.0, "texture": ExtResource("21_tex") },
+{ "duration": 1.0, "texture": ExtResource("22_tex") },
+{ "duration": 1.0, "texture": ExtResource("23_tex") },
+{ "duration": 1.0, "texture": ExtResource("24_tex") },
+{ "duration": 1.0, "texture": ExtResource("25_tex") },
+{ "duration": 1.0, "texture": ExtResource("26_tex") },
+{ "duration": 1.0, "texture": ExtResource("27_tex") },
+{ "duration": 1.0, "texture": ExtResource("28_tex") },
+{ "duration": 1.0, "texture": ExtResource("29_tex") },
+{ "duration": 1.0, "texture": ExtResource("30_tex") }
+],
+"loop": false,
+"name": &"skill",
+"speed": 11.0
+}, {
+"frames": [
+{ "duration": 1.0, "texture": ExtResource("31_tex") },
+{ "duration": 1.0, "texture": ExtResource("32_tex") },
+{ "duration": 1.0, "texture": ExtResource("33_tex") },
+{ "duration": 1.0, "texture": ExtResource("34_tex") },
+{ "duration": 1.0, "texture": ExtResource("35_tex") }
+],
+"loop": false,
+"name": &"summon",
+"speed": 7.0
+}]
+
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_exec"]
+radius = 32.0
+height = 110.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_melee"]
+size = Vector2(110, 80)
+
+[node name="UndeadExecutioner" type="CharacterBody2D" groups=["Boss", "Inamici"]]
+collision_layer = 7
+collision_mask = 1
+script = ExtResource("1_script")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(1.8, 1.8)
+sprite_frames = SubResource("SpriteFrames_executioner")
+animation = &"idle"
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 10)
+shape = SubResource("CapsuleShape2D_exec")
+
+[node name="MeleeArea" type="Area2D" parent="."]
+position = Vector2(-45, 10)
+collision_layer = 0
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MeleeArea"]
+shape = SubResource("RectangleShape2D_melee")
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="frame_changed" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_frame_changed"]
